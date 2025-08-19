@@ -203,3 +203,47 @@ body,
     overflow: auto;
   } /* raw JSON scrolls horizontally if needed */
 }
+
+.home-actions {
+  display: grid;
+  gap: 12px;
+}
+@media (min-width: 560px) {
+  .home-actions {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.btn,
+.btn-secondary {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-weight: 700;
+}
+.btn {
+  background: var(--accent);
+  color: var(--text);
+  border: none;
+}
+.btn-secondary {
+  background: #0d1016;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+/* Green primary action button */
+.btn-success {
+  background: #22c55e; /* green */
+  color: #071a0c; /* dark text for contrast */
+  border: 1px solid #1ea34f;
+}
+.btn-success:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.btn-success:hover {
+  filter: brightness(1.05);
+}
