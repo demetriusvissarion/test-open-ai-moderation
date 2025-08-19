@@ -185,3 +185,21 @@ body,
   max-width: 960px;
   margin: 0 16px; /* small side padding */
 }
+
+/* Mobile polish */
+@media (max-width: 480px) {
+  .card {
+    padding: 16px;
+  }
+  button {
+    width: 100%;
+    min-height: 44px;
+  } /* comfy tap target */
+  .link {
+    word-break: break-all;
+  } /* long URLs don’t overflow */
+  .json {
+    max-width: 100%;
+    overflow: auto;
+  } /* raw JSON scrolls horizontally if needed */
+}
